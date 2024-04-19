@@ -1025,23 +1025,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\andre\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\gutja\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\Documents\\GitHub\\DiplomBackend\\ContainerToolDBDb\\ContainerToolDB.csproj",
+      "projectUniqueName": "C:\\Users\\gutja\\Documents\\GitHub\\Diplomarbeit_Backend_Erweiterung\\ContainerToolDBDb\\ContainerToolDB.csproj",
       "projectName": "ContainerToolDB",
-      "projectPath": "C:\\Users\\andre\\Documents\\GitHub\\DiplomBackend\\ContainerToolDBDb\\ContainerToolDB.csproj",
-      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\Documents\\GitHub\\DiplomBackend\\ContainerToolDBDb\\obj\\",
+      "projectPath": "C:\\Users\\gutja\\Documents\\GitHub\\Diplomarbeit_Backend_Erweiterung\\ContainerToolDBDb\\ContainerToolDB.csproj",
+      "packagesPath": "C:\\Users\\gutja\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gutja\\Documents\\GitHub\\Diplomarbeit_Backend_Erweiterung\\ContainerToolDBDb\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gutja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

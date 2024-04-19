@@ -90,17 +90,6 @@ public class OrderService
             .ToList();
     }
 
-    public List<Order> GetOrdersWithCountry(string country)
-    {
-        return _db.Orders
-            .Include(x => x.Tl)
-            .Include(x => x.Cs)
-            .Include(x => x.Checklist)
-            .OrderBy(x => x.Id)
-            .Where(y => _db.Csinquiries.Single(x => x.Id == y.Id).Country.ToLower().Contains(country.ToLower()))
-            .ToList();
-    }
-
     public List<Order> GetOrdersWithSped(string sped)
     {
         return _db.Orders
@@ -109,6 +98,17 @@ public class OrderService
             .Include(x => x.Checklist)
             .OrderBy(x => x.Id)
             .Where(y => _db.Tlinquiries.Single(x => x.Id == y.TlId).Sped.ToLower().Contains(sped.ToLower()))
+            .ToList();
+    }
+
+    public List<Order> GetOrdersWithCountry(string country)
+    {
+        return _db.Orders
+            .Include(x => x.Tl)
+            .Include(x => x.Cs)
+            .Include(x => x.Checklist)
+            .OrderBy(x => x.Id)
+            .Where(y => _db.Csinquiries.Single(x => x.Id == y.CsId).Country.ToLower().Contains(country.ToLower()))
             .ToList();
     }
 

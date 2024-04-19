@@ -69,6 +69,13 @@ public class OrdersController : ControllerBase
         .ToList();
     }
 
+    [HttpGet("Country")]
+    public List<OrderDto> GetOrdersWithCountry([FromQuery] string country)
+    {
+        return _orderService.GetOrdersWithCountry(country).Select(x => ToOrderDto(x))
+        .ToList();
+    }
+
     [HttpGet("LastUpdated")]
     public List<OrderDto>? GetOrdersWithLastUpdatedAt([FromQuery] string lastUpdated)
     {
