@@ -10612,19 +10612,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gutja\\.nuget\\packages\\": {}
+    "C:\\Users\\andre\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gutja\\Downloads\\DiplomBackend (2)\\DiplomBackend\\Backend\\Backend.csproj",
+      "projectUniqueName": "C:\\Users\\andre\\Documents\\GitHub\\DiplomBackend\\Backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "C:\\Users\\gutja\\Downloads\\DiplomBackend (2)\\DiplomBackend\\Backend\\Backend.csproj",
-      "packagesPath": "C:\\Users\\gutja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gutja\\Downloads\\DiplomBackend (2)\\DiplomBackend\\Backend\\obj\\",
+      "projectPath": "C:\\Users\\andre\\Documents\\GitHub\\DiplomBackend\\Backend\\Backend.csproj",
+      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\andre\\Documents\\GitHub\\DiplomBackend\\Backend\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\gutja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10638,8 +10642,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\gutja\\Downloads\\DiplomBackend (2)\\DiplomBackend\\ContainerToolDBDb\\ContainerToolDB.csproj": {
-              "projectPath": "C:\\Users\\gutja\\Downloads\\DiplomBackend (2)\\DiplomBackend\\ContainerToolDBDb\\ContainerToolDB.csproj"
+            "C:\\Users\\andre\\Documents\\GitHub\\DiplomBackend\\ContainerToolDBDb\\ContainerToolDB.csproj": {
+              "projectPath": "C:\\Users\\andre\\Documents\\GitHub\\DiplomBackend\\ContainerToolDBDb\\ContainerToolDB.csproj"
             }
           }
         }
