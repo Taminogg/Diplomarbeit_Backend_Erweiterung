@@ -1,0 +1,427 @@
+@baseUrl = http://localhost:5000
+
+
+################################################## ArticlesCR
+DELETE {{baseUrl}}/ArticlesCR?id=1
+#####
+DELETE {{baseUrl}}/ArticlesCR/CsId?id=1
+#####
+GET {{baseUrl}}/ArticlesCR
+#####
+GET {{baseUrl}}/ArticlesCR/CsInquiry/1
+#####
+POST {{baseUrl}}/ArticlesCR
+Content-type: application/json
+
+{
+   "articleNumber": 1,
+   "pallets": 1,
+   "csInquiryId": 1
+}
+#####
+
+################################################## ArticlesPP
+DELETE {{baseUrl}}/ArticlesPP?id=1
+#####
+DELETE {{baseUrl}}/ArticlesPP/ProductionPlanningId?id=1
+#####
+GET {{baseUrl}}/ArticlesPP
+#####
+GET {{baseUrl}}/ArticlesPP/ProductionPlanning/1
+#####
+POST {{baseUrl}}/ArticlesPP
+Content-type: application/json
+
+{
+   "articleNumber": 1,
+   "pallets": 1,
+   "productionPlanningId": 1,
+   "minHeigthRequired": 1,
+   "desiredDeliveryDate": 1,
+   "inquiryForFixedOrder": true,
+   "inquiryForNonFixedOrder": true,
+   "inquiryForQuotation": true
+}
+#####
+PUT {{baseUrl}}/ArticlesPP
+Content-type: application/json
+
+{
+   "id": 1,
+   "deliveryDate": 1,
+   "nozzle": "abc",
+   "shortText": "abc",
+   "factory": "abc",
+   "productionOrder": "abc",
+   "plannedOrder": "abc",
+   "plant": "abc"
+}
+#####
+
+################################################## Checklists
+DELETE {{baseUrl}}/Checklists?id=1
+#####
+GET {{baseUrl}}/Checklists
+#####
+GET {{baseUrl}}/Checklists/1
+#####
+GET {{baseUrl}}/Checklists/GeneratedByAdmin
+#####
+POST {{baseUrl}}/Checklists
+Content-type: application/json
+
+{
+   "checklistname": "abc",
+   "generatedByAdmin": true,
+   "id": 1
+}
+#####
+PUT {{baseUrl}}/Checklists
+Content-type: application/json
+
+{
+   "id": 1,
+   "checklistname": "abc",
+   "generatedByAdmin": true
+}
+#####
+
+################################################## Csinquiries
+DELETE {{baseUrl}}/Csinquiries?id=1
+#####
+GET {{baseUrl}}/Csinquiries
+#####
+GET {{baseUrl}}/Csinquiries/1
+#####
+POST {{baseUrl}}/Csinquiries
+Content-type: application/json
+
+{
+   "abnumber": 1,
+   "bruttoWeightInKg": 1,
+   "incoterm": "abc",
+   "containersizeA": 1,
+   "containersizeB": 1,
+   "containersizeHc": 1,
+   "freeDetention": 1,
+   "country": "abc",
+   "thctb": true,
+   "thcc": true,
+   "readyToLoad": "abc",
+   "isDirectLine": true,
+   "isFastLine": true
+}
+#####
+PUT {{baseUrl}}/Csinquiries
+Content-type: application/json
+
+{
+   "id": 1,
+   "abnumber": 1,
+   "grossWeightInKg": 1,
+   "incoterm": "abc",
+   "containersizeA": 1,
+   "containersizeB": 1,
+   "containersizeHc": 1,
+   "freeDetention": 1,
+   "thctb": true,
+   "thcc": true,
+   "readyToLoad": "abc",
+   "country": "abc",
+   "isFastLine": true,
+   "isDirectLine": true
+}
+#####
+PUT {{baseUrl}}/Csinquiries/ApproveCrCs
+Content-type: application/json
+
+{
+   "id": 1,
+   "status": true
+}
+#####
+
+################################################## Files
+GET {{baseUrl}}/Files
+#####
+GET {{baseUrl}}/Files/1
+#####
+POST {{baseUrl}}/Files
+#####
+
+################################################## LogIn
+POST {{baseUrl}}/LogIn/login
+Content-type: application/json
+
+{
+   "userName": "abc",
+   "password": "abc",
+   "email": "abc"
+}
+#####
+POST {{baseUrl}}/LogIn/register
+Content-type: application/json
+
+{
+   "userName": "abc",
+   "password": "abc",
+   "email": "abc"
+}
+#####
+
+################################################## MessageConversations
+GET {{baseUrl}}/MessageConversations
+#####
+GET {{baseUrl}}/MessageConversations/1
+#####
+POST {{baseUrl}}/MessageConversations
+Content-type: application/json
+
+{
+   "orderId": 1,
+   "messageId": 1
+}
+#####
+
+################################################## Messages
+GET {{baseUrl}}/Messages?id=1
+#####
+POST {{baseUrl}}/Messages
+Content-type: application/json
+
+{
+   "content": "abc",
+   "from": "abc",
+   "attachmentId": 1
+}
+#####
+
+################################################## Orders
+DELETE {{baseUrl}}/Orders?id=1
+#####
+GET {{baseUrl}}/Orders
+#####
+GET {{baseUrl}}/Orders/1
+#####
+GET {{baseUrl}}/Orders/ApprovedByCs?approved=True
+#####
+GET {{baseUrl}}/Orders/ApprovedByPp?approved=True
+#####
+GET {{baseUrl}}/Orders/ApprovedByPpCs?approved=True
+#####
+GET {{baseUrl}}/Orders/ApprovedByTl?approved=True
+#####
+GET {{baseUrl}}/Orders/CreatedBy?createdBy=abc
+#####
+GET {{baseUrl}}/Orders/Customername?customername=abc
+#####
+GET {{baseUrl}}/Orders/LastUpdated?lastUpdated=abc
+#####
+GET {{baseUrl}}/Orders/Sped?sped=abc
+#####
+GET {{baseUrl}}/Orders/Status?status=abc
+#####
+POST {{baseUrl}}/Orders
+Content-type: application/json
+
+{
+   "customerName": "abc",
+   "additionalInformation": "abc",
+   "createdBy": "abc",
+   "checklistId": 1,
+   "csId": 1,
+   "tlId": 1,
+   "ppId": 1
+}
+#####
+PUT {{baseUrl}}/Orders/Cancel
+Content-type: application/json
+
+{
+   "id": 1,
+   "status": true
+}
+#####
+PUT {{baseUrl}}/Orders/OrderCS
+Content-type: application/json
+
+{
+   "id": 1,
+   "additionalInformation": "abc",
+   "customerName": "abc",
+   "createdBy": "abc"
+}
+#####
+PUT {{baseUrl}}/Orders/OrderedByAbnumber
+Content-type: application/json
+
+{
+   "orderIds": 
+   [1],
+   "asc": true
+}
+#####
+PUT {{baseUrl}}/Orders/OrderedByCountry
+Content-type: application/json
+
+{
+   "orderIds": 
+   [1],
+   "asc": true
+}
+#####
+PUT {{baseUrl}}/Orders/OrderedByReadyToLoad
+Content-type: application/json
+
+{
+   "orderIds": 
+   [1],
+   "asc": true
+}
+#####
+PUT {{baseUrl}}/Orders/OrderedBySped
+Content-type: application/json
+
+{
+   "orderIds": 
+   [1],
+   "asc": true
+}
+#####
+PUT {{baseUrl}}/Orders/OrderSD
+Content-type: application/json
+
+{
+   "id": 1,
+   "additionalInformation": "abc",
+   "createdBy": "abc"
+}
+#####
+PUT {{baseUrl}}/Orders/Status
+Content-type: application/json
+
+{
+   "id": 1,
+   "status": "abc"
+}
+#####
+PUT {{baseUrl}}/Orders/SuccessfullyFinished
+Content-type: application/json
+
+{
+   "id": 1,
+   "status": true
+}
+#####
+
+################################################## ProductionPlannings
+GET {{baseUrl}}/ProductionPlannings
+#####
+GET {{baseUrl}}/ProductionPlannings/1
+#####
+POST {{baseUrl}}/ProductionPlannings
+Content-type: application/json
+
+{
+   "recievingCountry": "abc",
+   "customerPriority": "abc"
+}
+#####
+PUT {{baseUrl}}/ProductionPlannings
+Content-type: application/json
+
+{
+   "id": 1,
+   "recievingCountry": "abc",
+   "customerPriority": "abc"
+}
+#####
+PUT {{baseUrl}}/ProductionPlannings/ApprovePpCs
+Content-type: application/json
+
+{
+   "id": 1,
+   "status": true
+}
+#####
+PUT {{baseUrl}}/ProductionPlannings/ApprovePpPp
+Content-type: application/json
+
+{
+   "id": 1,
+   "status": true
+}
+#####
+
+################################################## StepChecklists
+GET {{baseUrl}}/StepChecklists
+#####
+
+################################################## Steps
+GET {{baseUrl}}/Steps/1
+#####
+POST {{baseUrl}}/Steps
+Content-type: application/json
+
+{
+   "stepNumber": 1,
+   "checklistId": 1,
+   "stepDescription": "abc",
+   "stepName": "abc"
+}
+#####
+PUT {{baseUrl}}/Steps
+Content-type: application/json
+
+{
+   "id": 1,
+   "stepNumber": 1,
+   "stepDescription": "abc",
+   "stepName": "abc"
+}
+#####
+PUT {{baseUrl}}/Steps/CompleteStep
+Content-type: application/json
+
+{
+   "id": 1,
+   "isCompleted": true
+}
+#####
+
+################################################## Tlinquiries
+DELETE {{baseUrl}}/Tlinquiries?id=1
+#####
+GET {{baseUrl}}/Tlinquiries
+#####
+GET {{baseUrl}}/Tlinquiries/1
+#####
+POST {{baseUrl}}/Tlinquiries
+#####
+PUT {{baseUrl}}/Tlinquiries
+Content-type: application/json
+
+{
+   "id": 1,
+   "sped": "abc",
+   "acceptingPort": "abc",
+   "invoiceOn": "abc",
+   "retrieveDate": "abc",
+   "retrieveLocation": "abc",
+   "scGeneral": 1,
+   "scMain": 1,
+   "scTrail": 1,
+   "portOfDeparture": "abc",
+   "ets": "abc",
+   "eta": "abc",
+   "boat": "abc"
+}
+#####
+PUT {{baseUrl}}/Tlinquiries/ApproveCrTl
+Content-type: application/json
+
+{
+   "id": 1,
+   "status": true
+}
+#####
