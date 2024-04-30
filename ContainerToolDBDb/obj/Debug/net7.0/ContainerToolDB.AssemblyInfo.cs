@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ContainerToolDB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89755ded6d2723ccc48ca2e1a3790c10b7fb1ba9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d3e88a6447c0688c0684032a620c3020575aa8c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ContainerToolDB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ContainerToolDB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -42,6 +42,14 @@ public class StepService
         return step;
     }
 
+    public Step DeleteStep(int id)
+    {
+        var step = _db.Steps.SingleOrDefault(x => x.Id == id);
+        _db.Steps.Remove(step);
+        _db.SaveChanges();
+        return step;
+    }
+
     public Step CreateNewStepForChecklist(AddStepDto addStepDto)
     {
         var step = new Step {

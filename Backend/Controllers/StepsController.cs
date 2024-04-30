@@ -29,6 +29,12 @@ public class StepsController : ControllerBase
         return new StepDto().CopyFrom(_stepsService.EditStep(editStepDto));
     }
 
+    [HttpDelete]
+    public StepDto DeleteStep(int id)
+    {
+        return new StepDto().CopyFrom(_stepsService.DeleteStep(id));
+    }
+
     [HttpPost]
     public StepDto Checklist(AddStepDto addStepDto)
     {

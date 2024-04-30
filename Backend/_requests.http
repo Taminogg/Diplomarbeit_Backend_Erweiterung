@@ -14,9 +14,9 @@ POST {{baseUrl}}/ArticlesCR
 Content-type: application/json
 
 {
-   "articleNumber": 1,
-   "pallets": 1,
-   "csInquiryId": 1
+      "articleNumber": 1,
+      "pallets": 1,
+      "csInquiryId": 1
 }
 #####
 
@@ -33,11 +33,11 @@ POST {{baseUrl}}/ArticlesPP
 Content-type: application/json
 
 {
-   "articleNumber": 1,
-   "pallets": 1,
-   "productionPlanningId": 1,
-   "minHeigthRequired": 1,
-   "desiredDeliveryDate": 1,
+      "articleNumber": 1,
+      "pallets": 1,
+      "productionPlanningId": 1,
+      "minHeigthRequired": 1,
+      "desiredDeliveryDate": 1,
    "inquiryForFixedOrder": true,
    "inquiryForNonFixedOrder": true,
    "inquiryForQuotation": true
@@ -97,12 +97,12 @@ POST {{baseUrl}}/Csinquiries
 Content-type: application/json
 
 {
-   "abnumber": 1,
-   "bruttoWeightInKg": 1,
-   "incoterm": "abc",
-   "containersizeA": 1,
-   "containersizeB": 1,
-   "containersizeHc": 1,
+      "abnumber": 1,
+      "bruttoWeightInKg": 1,
+      "incoterm": "abc",
+      "containersizeA": 1,
+      "containersizeB": 1,
+      "containersizeHc": 1,
    "freeDetention": 1,
    "country": "abc",
    "thctb": true,
@@ -126,8 +126,8 @@ Content-type: application/json
    "freeDetention": 1,
    "thctb": true,
    "thcc": true,
-   "readyToLoad": "abc",
-   "country": "abc",
+      "readyToLoad": "abc",
+      "country": "abc",
    "isFastLine": true,
    "isDirectLine": true
 }
@@ -154,10 +154,10 @@ POST {{baseUrl}}/LogIn/login
 Content-type: application/json
 
 {
-   "userName": "abc",
-   "password": "abc",
-   "email": "abc"
-}
+      "userName": "abc",
+      "password": "abc",
+      "email": "abc"
+   }
 #####
 POST {{baseUrl}}/LogIn/register
 Content-type: application/json
@@ -227,8 +227,8 @@ POST {{baseUrl}}/Orders
 Content-type: application/json
 
 {
-   "customerName": "abc",
-   "additionalInformation": "abc",
+      "customerName": "abc",
+      "additionalInformation": "abc",
    "createdBy": "abc",
    "checklistId": 1,
    "csId": 1,
@@ -242,7 +242,7 @@ Content-type: application/json
 {
    "id": 1,
    "status": true
-}
+   }
 #####
 PUT {{baseUrl}}/Orders/OrderCS
 Content-type: application/json
@@ -260,15 +260,15 @@ Content-type: application/json
 {
    "orderIds": 
    [1],
-   "asc": true
-}
+      "asc": true
+   }
 #####
 PUT {{baseUrl}}/Orders/OrderedByCountry
 Content-type: application/json
 
 {
    "orderIds": 
-   [1],
+      [1],
    "asc": true
 }
 #####
@@ -279,7 +279,7 @@ Content-type: application/json
    "orderIds": 
    [1],
    "asc": true
-}
+   }
 #####
 PUT {{baseUrl}}/Orders/OrderedBySped
 Content-type: application/json
@@ -303,16 +303,16 @@ PUT {{baseUrl}}/Orders/Status
 Content-type: application/json
 
 {
-   "id": 1,
-   "status": "abc"
-}
+      "id": 1,
+      "status": "abc"
+   }
 #####
 PUT {{baseUrl}}/Orders/SuccessfullyFinished
 Content-type: application/json
 
 {
-   "id": 1,
-   "status": true
+      "id": 1,
+      "status": true
 }
 #####
 
@@ -333,18 +333,18 @@ PUT {{baseUrl}}/ProductionPlannings
 Content-type: application/json
 
 {
-   "id": 1,
-   "recievingCountry": "abc",
-   "customerPriority": "abc"
-}
+      "id": 1,
+      "recievingCountry": "abc",
+      "customerPriority": "abc"
+   }
 #####
 PUT {{baseUrl}}/ProductionPlannings/ApprovePpCs
 Content-type: application/json
 
 {
    "id": 1,
-   "status": true
-}
+      "status": true
+   }
 #####
 PUT {{baseUrl}}/ProductionPlannings/ApprovePpPp
 Content-type: application/json
@@ -360,6 +360,8 @@ GET {{baseUrl}}/StepChecklists
 #####
 
 ################################################## Steps
+DELETE {{baseUrl}}/Steps?id=1
+#####
 GET {{baseUrl}}/Steps/1
 #####
 POST {{baseUrl}}/Steps
@@ -376,19 +378,19 @@ PUT {{baseUrl}}/Steps
 Content-type: application/json
 
 {
-   "id": 1,
-   "stepNumber": 1,
-   "stepDescription": "abc",
-   "stepName": "abc"
-}
+      "id": 1,
+      "stepNumber": 1,
+      "stepDescription": "abc",
+      "stepName": "abc"
+   }
 #####
 PUT {{baseUrl}}/Steps/CompleteStep
 Content-type: application/json
 
 {
-   "id": 1,
-   "isCompleted": true
-}
+      "id": 1,
+      "isCompleted": true
+   }
 #####
 
 ################################################## Tlinquiries
@@ -404,7 +406,7 @@ PUT {{baseUrl}}/Tlinquiries
 Content-type: application/json
 
 {
-   "id": 1,
+      "id": 1,
    "sped": "abc",
    "acceptingPort": "abc",
    "invoiceOn": "abc",
